@@ -1,0 +1,109 @@
+[
+  {
+    "id": "bandit",
+    "name": "Bandit",
+    "rarity": "rare",
+    "class": "Warrior",
+    "stats": {
+      "hp": 900,
+      "attack": 150,
+      "defense": 80,
+      "crit_rate": 0.05,
+      "crit_dmg": 1.5,
+      "speed": 80,
+      "dodge": 0.02,
+      "accuracy": 0.9,
+      "armor_pierce": 0.02,
+      "energy": 20
+    },
+    "skills": [
+      {"name":"Claw","type":"active","desc":"basic","effect":{"action":"damage","mult":1.0},"energy_cost":0}
+    ]
+  },
+  {
+    "id": "scout",
+    "name": "Scout",
+    "rarity": "rare",
+    "class": "Ranger",
+    "stats": {
+      "hp": 700,
+      "attack": 120,
+      "defense": 60,
+      "crit_rate": 0.06,
+      "crit_dmg": 1.5,
+      "speed": 95,
+      "dodge": 0.06,
+      "accuracy": 0.92,
+      "armor_pierce": 0.03,
+      "energy": 25
+    },
+    "skills": [
+      {"name":"Arrow","type":"active","desc":"basic","effect":{"action":"damage","mult":1.0},"energy_cost":0}
+    ]
+  },
+  {
+    "id": "brute",
+    "name": "Brute",
+    "rarity": "epic",
+    "class": "Tank",
+    "stats": {
+      "hp": 2500,
+      "attack": 250,
+      "defense": 220,
+      "crit_rate": 0.04,
+      "crit_dmg": 1.4,
+      "speed": 60,
+      "dodge": 0.01,
+      "accuracy": 0.9,
+      "armor_pierce": 0.01,
+      "energy": 20
+    },
+    "skills": [
+      {"name":"Smash","type":"active","desc":"heavy hit","effect":{"action":"damage","mult":1.2},"energy_cost":0}
+    ]
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "rarity": "epic",
+    "class": "Assassin",
+    "stats": {
+      "hp": 1200,
+      "attack": 200,
+      "defense": 100,
+      "crit_rate": 0.25,
+      "crit_dmg": 1.6,
+      "speed": 110,
+      "dodge": 0.1,
+      "accuracy": 0.95,
+      "armor_pierce": 0.05,
+      "energy": 30
+    },
+    "skills": [
+      {"name":"Backstab","type":"active","desc":"High damage single-target","effect":{"action":"damage","mult":2.0},"energy_cost":15},
+      {"name":"Vanish","type":"active","desc":"Increases dodge","effect":{"action":"buff","stat":"dodge","amount":0.15,"turns":2},"energy_cost":10}
+    ]
+  },
+  {
+    "id": "ogre",
+    "name": "Ogre",
+    "rarity": "mythic",
+    "class": "Tank",
+    "stats": {
+      "hp": 4000,
+      "attack": 350,
+      "defense": 400,
+      "crit_rate": 0.03,
+      "crit_dmg": 1.4,
+      "speed": 50,
+      "dodge": 0.01,
+      "accuracy": 0.9,
+      "armor_pierce": 0.02,
+      "energy": 20
+    },
+    "skills": [
+      {"name":"Crush","type":"active","desc":"AOE heavy hit","effect":{"action":"damage","mult":1.5,"aoe":true},"energy_cost":20},
+      {"name":"Roar","type":"active","desc":"Taunt all","effect":{"action":"taunt","turns":2},"energy_cost":15}
+    ]
+  }
+]

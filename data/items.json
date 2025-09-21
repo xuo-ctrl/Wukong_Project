@@ -1,0 +1,4 @@
+{
+  "Basic Sword": { "type": "weapon", "attack": 20 },
+  "Wooden Shield": { "type": "armor", "defense": 15 }
+}

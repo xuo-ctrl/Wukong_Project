@@ -1,0 +1,36 @@
+{
+    "inventory": {
+        "gold": 0,
+        "shards": 0,
+        "gear": [],
+        "artifacts": []
+    },
+    "heroes": [
+        {
+            "name": "Sun Wukong",
+            "rarity": "Mythic",
+            "class": "Fighter",
+            "stats": {
+                "hp": 3000,
+                "attack": 300,
+                "defense": 150,
+                "speed": 120,
+                "crit": 0.25,
+                "dodge": 0.15
+            }
+        },
+        {
+            "name": "Pigsy",
+            "rarity": "Rare",
+            "class": "Tank",
+            "stats": {
+                "hp": 2000,
+                "attack": 120,
+                "defense": 100,
+                "speed": 80,
+                "crit": 0.1,
+                "dodge": 0.05
+            }
+        }
+    ]
+}

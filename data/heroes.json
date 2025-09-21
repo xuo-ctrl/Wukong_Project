@@ -1,0 +1,210 @@
+[
+  {
+    "id": "wukong",
+    "name": "Sun Wukong",
+    "rarity": "Ascended",
+    "class": "Fighter",
+    "stats": {
+      "hp": 12000,
+      "attack": 2200,
+      "defense": 700,
+      "crit_rate": 0.35,
+      "crit_dmg": 1.75,
+      "speed": 140,
+      "dodge": 0.12,
+      "accuracy": 0.95,
+      "armor_pierce": 0.25,
+      "energy": 50
+    },
+    "skills": [
+      {"name":"Monkey Strike","type":"active","desc":"Single strike","effect":{"action":"damage","mult":1.8},"energy_cost":15},
+      {"name":"Nimbus Dash","type":"active","desc":"Self speed buff","effect":{"action":"buff","stat":"speed","amount":0.30,"turns":2},"energy_cost":10},
+      {"name":"Cloud Split","type":"active","desc":"AOE","effect":{"action":"damage","mult":2.5,"aoe":true},"energy_cost":30},
+      {"name":"Trickster","type":"passive","desc":"Chance ignore def","effect":{"action":"passive","chance":0.30,"ignore_def":true},"energy_cost":0},
+      {"name":"Ruyi Ultimate","type":"active","desc":"Massive single-target","effect":{"action":"ultimate","mult":6.0,"stun":2},"energy_cost":100}
+    ]
+  },
+  {
+    "id": "jade",
+    "name": "Jade Maiden",
+    "rarity": "legendary",
+    "class": "Mage",
+    "stats": {
+      "hp": 7000,
+      "attack": 1800,
+      "defense": 350,
+      "crit_rate": 0.12,
+      "crit_dmg": 1.5,
+      "speed": 100,
+      "dodge": 0.06,
+      "accuracy": 0.98,
+      "armor_pierce": 0.05,
+      "energy": 40
+    },
+    "skills": [
+      {"name":"Arcane Bolt","type":"active","desc":"Single target","effect":{"action":"damage","mult":1.4},"energy_cost":20},
+      {"name":"Mana Weave","type":"active","desc":"Grant energy","effect":{"action":"energy","amount":25},"energy_cost":0},
+      {"name":"Sage Passive","type":"passive","desc":"Mage ally buff","effect":{"action":"passive","ally_attack_pct":0.08},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"monk",
+    "name":"Iron Monk",
+    "rarity":"legendary",
+    "class":"Tank",
+    "stats":{
+      "hp":18000,
+      "attack":900,
+      "defense":1500,
+      "crit_rate":0.05,
+      "crit_dmg":1.4,
+      "speed":70,
+      "dodge":0.04,
+      "accuracy":0.92,
+      "armor_pierce":0.02,
+      "energy":30
+    },
+    "skills":[
+      {"name":"Shield Bash","type":"active","desc":"Smash single target","effect":{"action":"damage","mult":0.9},"energy_cost":15},
+      {"name":"Taunt","type":"active","desc":"Taunt","effect":{"action":"taunt","turns":2},"energy_cost":20},
+      {"name":"Stone Skin","type":"passive","desc":"Allies def up","effect":{"action":"passive","ally_def_pct":0.10},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"archer",
+    "name":"Silver Archer",
+    "rarity":"legendary",
+    "class":"Archer",
+    "stats":{
+      "hp":8000,
+      "attack":1600,
+      "defense":400,
+      "crit_rate":0.2,
+      "crit_dmg":1.6,
+      "speed":120,
+      "dodge":0.08,
+      "accuracy":0.96,
+      "armor_pierce":0.1,
+      "energy":45
+    },
+    "skills":[
+      {"name":"Piercing Arrow","type":"active","desc":"High single-target","effect":{"action":"damage","mult":2.0,"pierce":0.4},"energy_cost":25},
+      {"name":"Focus Shot","type":"active","desc":"Self crit buff","effect":{"action":"buff","stat":"crit_rate","amount":0.25,"turns":3},"energy_cost":10},
+      {"name":"Sharpshooter","type":"passive","desc":"Bonus crit dmg vs Fighter","effect":{"action":"passive","bonus_crit_dmg_vs_fighter":0.15},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"rival",
+    "name":"Rivalsong",
+    "rarity":"legendary",
+    "class":"Assassin",
+    "stats":{
+      "hp":8500,
+      "attack":2000,
+      "defense":300,
+      "crit_rate":0.4,
+      "crit_dmg":1.8,
+      "speed":160,
+      "dodge":0.18,
+      "accuracy":0.93,
+      "armor_pierce":0.18,
+      "energy":45
+    },
+    "skills":[
+      {"name":"Shadow Slash","type":"active","desc":"High single-target","effect":{"action":"damage","mult":2.2},"energy_cost":20},
+      {"name":"Evasion Hex","type":"active","desc":"Reduce dodge","effect":{"action":"debuff","stat":"dodge","amount":0.3,"turns":3},"energy_cost":20},
+      {"name":"Ambush","type":"passive","desc":"First strike bonus","effect":{"action":"passive","first_strike_bonus":0.4},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"priest",
+    "name":"Lotus Priest",
+    "rarity":"epic",
+    "class":"Healer",
+    "stats":{
+      "hp":9000,
+      "attack":900,
+      "defense":550,
+      "crit_rate":0.06,
+      "crit_dmg":1.45,
+      "speed":90,
+      "dodge":0.05,
+      "accuracy":0.97,
+      "armor_pierce":0.03,
+      "energy":50
+    },
+    "skills":[
+      {"name":"Light Heal","type":"active","desc":"Heals one ally","effect":{"action":"heal","mult":1.2},"energy_cost":20},
+      {"name":"Group Mend","type":"active","desc":"Heals all allies","effect":{"action":"heal","mult":0.8,"aoe":true},"energy_cost":40}
+    ]
+  },
+  {
+    "id":"bamboo_sage",
+    "name":"Bamboo Sage",
+    "rarity":"mythic",
+    "class":"Support",
+    "stats":{
+      "hp":7500,
+      "attack":1200,
+      "defense":420,
+      "crit_rate":0.1,
+      "crit_dmg":1.5,
+      "speed":110,
+      "dodge":0.05,
+      "accuracy":0.97,
+      "armor_pierce":0.04,
+      "energy":45
+    },
+    "skills":[
+      {"name":"Soothing Wind","type":"active","desc":"Heal single","effect":{"action":"heal","mult":1.1},"energy_cost":20},
+      {"name":"Bamboo Ward","type":"active","desc":"Buff allies def","effect":{"action":"buff","stat":"defense","amount":0.2,"turns":3},"energy_cost":25},
+      {"name":"Calm Presence","type":"passive","desc":"Small regen each turn","effect":{"action":"passive","regen":0.02},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"red_hunter",
+    "name":"Red Hunter",
+    "rarity":"UR",
+    "class":"Ranger",
+    "stats":{
+      "hp":8200,
+      "attack":1850,
+      "defense":380,
+      "crit_rate":0.25,
+      "crit_dmg":1.65,
+      "speed":130,
+      "dodge":0.1,
+      "accuracy":0.96,
+      "armor_pierce":0.12,
+      "energy":45
+    },
+    "skills":[
+      {"name":"Volley","type":"active","desc":"AOE arrows","effect":{"action":"damage","mult":1.2,"aoe":true},"energy_cost":35},
+      {"name":"Headshot","type":"active","desc":"High single-target damage","effect":{"action":"damage","mult":2.0},"energy_cost":25},
+      {"name":"Steady Aim","type":"passive","desc":"Small crit rate boost","effect":{"action":"passive","crit_rate_add":0.05},"energy_cost":0}
+    ]
+  },
+  {
+    "id":"storm_lancer",
+    "name":"Storm Lancer",
+    "rarity":"legendary",
+    "class":"Warrior",
+    "stats":{
+      "hp":10000,
+      "attack":1500,
+      "defense":700,
+      "crit_rate":0.15,
+      "crit_dmg":1.55,
+      "speed":115,
+      "dodge":0.05,
+      "accuracy":0.95,
+      "armor_pierce":0.06,
+      "energy":40
+    },
+    "skills":[
+      {"name":"Lance Thrust","type":"active","desc":"Single target","effect":{"action":"damage","mult":1.6},"energy_cost":20},
+      {"name":"Storm Charge","type":"active","desc":"Rush forward buff","effect":{"action":"buff","stat":"speed","amount":0.2,"turns":2},"energy_cost":15},
+      {"name":"Warheart","type":"passive","desc":"Damage when low HP","effect":{"action":"passive","hp_threshold":0.3,"bonus_damage":0.25},"energy_cost":0}
+    ]
+  }
+]
